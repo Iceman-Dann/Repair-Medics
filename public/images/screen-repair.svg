@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#faf5ff"/>
+  <rect x="60" y="40" width="280" height="220" fill="#f3e8ff" stroke="#9333ea" stroke-width="2" rx="5"/>
+  <pattern id="screen" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#9333ea"/>
+    <circle cx="12" cy="12" r="1" fill="#9333ea"/>
+  </pattern>
+  <rect x="70" y="50" width="260" height="200" fill="url(#screen)" opacity="0.5"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="16" fill="#9333ea" text-anchor="middle">Screen Repair</text>
+</svg>

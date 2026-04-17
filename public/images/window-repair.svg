@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#f0f9ff"/>
+  <rect x="50" y="50" width="300" height="200" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" rx="5"/>
+  <line x1="200" y1="50" x2="200" y2="250" stroke="#0284c7" stroke-width="2"/>
+  <line x1="50" y1="150" x2="350" y2="150" stroke="#0284c7" stroke-width="2"/>
+  <circle cx="175" cy="125" r="8" fill="#0284c7"/>
+  <circle cx="225" cy="125" r="8" fill="#0284c7"/>
+  <circle cx="175" cy="175" r="8" fill="#0284c7"/>
+  <circle cx="225" cy="175" r="8" fill="#0284c7"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="16" fill="#0284c7" text-anchor="middle">Window Repair</text>
+</svg>

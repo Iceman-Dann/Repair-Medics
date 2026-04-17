@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import ServicesClient from "./ServicesClient";
+import { business } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Our Services | Apex Plumbing Co. | Austin, TX Plumber",
+  title: `Services | ${business.name} | Chicago, IL`,
   description:
-    "Full-service plumbing in Austin, TX. Emergency repairs, drain cleaning, water heater installation, sewer line service, bathroom remodeling, and gas line work. Licensed & insured.",
+    `${business.name} is publicly associated with window repair and installation, door repair and replacement, glass installation, screen repair, handyman work, and broader repair support in ${business.city}, ${business.state}.`,
   openGraph: {
-    title: "Our Services | Apex Plumbing Co.",
-    description: "Everything you need, done right. Explore our full range of professional plumbing services in Austin, TX.",
+    title: `Services | ${business.name}`,
+    description:
+      `Explore the service categories most clearly tied to ${business.name}'s public business profile in Chicago.`,
   },
 };
 

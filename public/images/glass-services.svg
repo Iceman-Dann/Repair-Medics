@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#f0fdf4"/>
+  <rect x="80" y="60" width="100" height="150" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="3"/>
+  <rect x="220" y="60" width="100" height="150" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="3"/>
+  <line x1="130" y1="60" x2="130" y2="210" stroke="#16a34a" stroke-width="1"/>
+  <line x1="270" y1="60" x2="270" y2="210" stroke="#16a34a" stroke-width="1"/>
+  <line x1="80" y1="135" x2="180" y2="135" stroke="#16a34a" stroke-width="1"/>
+  <line x1="220" y1="135" x2="320" y2="135" stroke="#16a34a" stroke-width="1"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="16" fill="#16a34a" text-anchor="middle">Glass Services</text>
+</svg>

@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import ReviewsClient from "./ReviewsClient";
+import { business } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Reviews | Apex Plumbing Co. | 4.9 Stars on Google",
+  title: `Public Profile and Proof | ${business.name}`,
   description:
-    "See why Austin trusts Apex Plumbing Co. Read 120+ verified reviews from real customers. 4.9 star rating on Google. Licensed, insured, and community recommended.",
+    `Review the public-facing business signals behind this ${business.name} site build, including service focus, phone number, Chicago listing context, and Facebook presence.`,
   openGraph: {
-    title: "Customer Reviews | Apex Plumbing Co.",
-    description: "4.9 stars from 120+ verified Google reviews. See what Austin is saying about us.",
+    title: `${business.name} | Public Profile and Proof`,
+    description:
+      `A transparent summary of the verified public signals used to rebuild this site around the right services and location.`,
   },
 };
 

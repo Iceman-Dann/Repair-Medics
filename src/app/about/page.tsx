@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import AboutClient from "./AboutClient";
+import { business } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "About Us | Apex Plumbing Co. | Austin, TX",
+  title: `About ${business.name} | Chicago Repair Services`,
   description:
-    "Learn about Apex Plumbing Co., Austin's most trusted plumbing company. Founded in 2009 by Marcus Reyes, we've grown from one truck to a full team — built on hard work and honest service.",
+    `Learn how ${business.name} is positioned online as a one stop repair shop for windows, doors, glass, screens, and broader property repair work in ${business.city}, ${business.state}.`,
   openGraph: {
-    title: "About Apex Plumbing Co. | Our Story",
-    description: "Founded in 2009 with one truck and a promise. Learn how we became Austin's top-rated plumber.",
+    title: `About ${business.name}`,
+    description:
+      `A Chicago-area repair company focused on windows, doors, glass, screens, and practical multi-trade repair work.`,
   },
 };
 

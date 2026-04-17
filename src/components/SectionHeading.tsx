@@ -22,7 +22,11 @@ export default function SectionHeading({ label, title, subtitle, center = true }
       </ScrollReveal>
       {subtitle && (
         <ScrollReveal delay={0.2}>
-          <p className="mt-4 text-lg text-text-secondary max-w-2xl mx-auto">
+          <p
+            className={`mt-4 max-w-2xl text-lg text-text-secondary ${
+              center ? "mx-auto" : ""
+            }`}
+          >
             {subtitle}
           </p>
         </ScrollReveal>

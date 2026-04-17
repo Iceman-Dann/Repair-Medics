@@ -1,13 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { business } from "@/lib/business";
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1400);
+    const timer = setTimeout(() => setIsLoading(false), 1100);
     return () => clearTimeout(timer);
   }, []);
 
@@ -15,38 +16,48 @@ export default function LoadingScreen() {
     <AnimatePresence>
       {isLoading && (
         <motion.div
-          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-primary"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-primary"
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.35, ease: "easeInOut" }}
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
             className="flex flex-col items-center gap-8"
           >
-            {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M6 12L6 4C6 2.89543 6.89543 2 8 2H10C11.1046 2 12 2.89543 12 4V12" />
-                  <path d="M6 12C6 14.2091 7.79086 16 10 16H14C16.2091 16 18 14.2091 18 12V10C18 8.89543 17.1046 8 16 8H12" />
-                  <path d="M10 16V22" />
-                  <path d="M14 16V22" />
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-accent/20 bg-accent/10 text-accent">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="4" y="4" width="16" height="16" rx="1.5" />
+                  <path d="M12 4v16M4 12h16" />
                 </svg>
               </div>
-              <span className="text-2xl font-extrabold tracking-tighter text-text-primary">
-                APEX <span className="text-accent">PLUMBING</span>
-              </span>
+              <div className="text-center">
+                <span className="block text-2xl font-bold tracking-tighter text-text-primary">
+                  {business.name}
+                </span>
+                <span className="block text-xs uppercase tracking-[0.28em] text-text-secondary">
+                  Chicago Repair Services
+                </span>
+              </div>
             </div>
 
-            {/* Progress bar */}
-            <div className="w-48 h-1 bg-secondary rounded-full overflow-hidden">
+            <div className="h-1 w-52 overflow-hidden rounded-full bg-secondary">
               <motion.div
-                className="h-full bg-accent rounded-full"
+                className="h-full rounded-full bg-accent"
                 initial={{ width: "0%" }}
                 animate={{ width: "100%" }}
-                transition={{ duration: 1.2, ease: "easeInOut" }}
+                transition={{ duration: 0.9, ease: "easeInOut" }}
               />
             </div>
           </motion.div>

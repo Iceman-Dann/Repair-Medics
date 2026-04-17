@@ -1,29 +1,51 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import FloatingCTA from "@/components/FloatingCTA";
 import Footer from "@/components/Footer";
 import LoadingScreen from "@/components/LoadingScreen";
+import { business } from "@/lib/business";
 
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Apex Plumbing Co. | Austin's #1 Rated Plumber | 24/7 Emergency Service",
+  title: `${business.name} | Window, Door, Glass and Screen Repair | Chicago, IL`,
   description:
-    "Apex Plumbing Co. is Austin, TX's most trusted plumbing company. Licensed & insured with 15+ years experience. Same-day service, upfront pricing, and 24/7 emergency repairs. Call (512) 555-0182.",
-  keywords: "plumber Austin TX, emergency plumber, plumbing repair, drain cleaning, water heater, Apex Plumbing",
+    `${business.name} serves ${business.areaShort} with window repair, door repair, glass installation, screen repair, and broader property repair work. Call ${business.phoneDisplay}.`,
+  keywords: [
+    "Repair Medics",
+    "window repair Chicago",
+    "door repair Chicago",
+    "glass installation Chicago",
+    "screen repair Chicago",
+    "handyman Chicago",
+  ],
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
-    title: "Apex Plumbing Co. | Austin's #1 Rated Plumber",
-    description: "Licensed & insured plumber in Austin, TX. 15+ years experience, 24/7 emergency service, free estimates.",
+    title: `${business.name} | Chicago Repair and Installation Services`,
+    description:
+      `Window, door, glass, screen, and general repair support across ${business.areaShort}. Call ${business.phoneDisplay}.`,
     type: "website",
     locale: "en_US",
-    siteName: "Apex Plumbing Co.",
+    siteName: business.name,
+    images: [
+      {
+        url: '/logo.png',
+        width: 100,
+        height: 100,
+        alt: `${business.name} Logo`,
+      },
+    ],
   },
 };
 
@@ -33,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={spaceGrotesk.variable}>
       <body className="font-inter antialiased">
         <LoadingScreen />
         <Navbar />

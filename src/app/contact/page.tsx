@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import ContactClient from "./ContactClient";
+import { business } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Apex Plumbing Co. | Get a Free Quote",
+  title: `Contact ${business.name} | Chicago, IL`,
   description:
-    "Contact Apex Plumbing Co. in Austin, TX. Get a free quote, book a service, or call for 24/7 emergency plumbing. Most requests get a response within the hour.",
+    `Call ${business.name} at ${business.phoneDisplay} or use the site intake form for window, door, glass, screen, and general repair work in ${business.city}, ${business.state}.`,
   openGraph: {
-    title: "Contact Apex Plumbing Co. | Free Quote",
-    description: "Get in touch for a free plumbing quote. Call, email, or fill out our form. 24/7 emergency service available.",
+    title: `Contact ${business.name}`,
+    description:
+      `Start a repair request with ${business.name} in Chicago. Phone support and a simple intake form are available on this page.`,
   },
 };
 
