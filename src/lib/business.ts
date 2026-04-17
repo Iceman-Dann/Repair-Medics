@@ -6,6 +6,8 @@ export const business = {
   phoneHref: "tel:773-555-0123",
   areaLabel: "Serving Chicago & Northwest Suburbs",
   areaShort: "Chicago & Northwest Suburbs",
+  city: "Chicago",
+  state: "Illinois",
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94366.49483291858!2d-87.829140!3d41.979950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd5c8c5c8c5c5%3A0x5c5c5c5c5c5c5c5!2sChicago%2C%20IL%2060631!5e0!3m2!1sen!2sus!4v1234567890",
   
   trustPoints: [
