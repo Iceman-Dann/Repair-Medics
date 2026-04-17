@@ -23,6 +23,7 @@ export const business = {
       id: "window-repair",
       name: "Window Repair",
       summary: "Complete window services including glass replacement, frame repair, and hardware fixes.",
+      detail: "We handle everything from simple glass replacement to complex frame restoration, ensuring your windows operate smoothly and your home stays secure.",
       image: "/images/window-repair.jpg",
       includes: [
         "Broken glass replacement",
@@ -36,6 +37,7 @@ export const business = {
       id: "door-services",
       name: "Door Services", 
       summary: "Professional door repair, installation, and maintenance for all door types.",
+      detail: "From entry doors to patio doors, we repair, tune-up, and upgrade all door systems to keep them secure and functional.",
       image: "/images/door-services.jpg",
       includes: [
         "Door frame repair",
@@ -48,6 +50,7 @@ export const business = {
     {
       id: "glass-services",
       name: "Glass Services",
+      detail: "We provide precision glass work for any application, from standard replacements to custom cuts and specialty installations.",
       summary: "Custom glass cutting, replacement, and installation for residential and commercial needs.", 
       image: "/images/glass-services.jpg",
       includes: [
@@ -61,6 +64,7 @@ export const business = {
     {
       id: "screen-repair",
       name: "Screen Repair",
+      detail: "Whether it's a small tear or a complete replacement, we'll have your screens looking good and functioning properly.",
       summary: "Screen repair, replacement, and new installation for windows, doors, and enclosures.",
       image: "/images/screen-repair.jpg",
       includes: [
@@ -73,6 +77,7 @@ export const business = {
     },
     {
       id: "handyman",
+      detail: "We tackle a wide range of maintenance and repair tasks, available for both routine fixes and emergency situations.",
       name: "General Repairs",
       summary: "Broad repair services for home and commercial maintenance needs.",
       image: "/images/handyman.jpg",
@@ -86,6 +91,7 @@ export const business = {
     },
     {
       id: "commercial",
+      detail: "We provide reliable maintenance and repair solutions for retail locations, offices, and other commercial spaces.",
       name: "Commercial Services",
       summary: "Specialized repair and maintenance services for businesses and commercial properties.",
       image: "/images/commercial.jpg",
