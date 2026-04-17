@@ -133,7 +133,7 @@ export default function AboutClient() {
                     {service.name}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-text-secondary">
-                    {service.detail}
+                    {service.summary}
                   </p>
                 </div>
               </ScrollReveal>
